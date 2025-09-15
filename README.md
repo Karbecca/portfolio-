@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Checkout the live site here!](https://gisadev.onrender.com)
+[Checkout the live site here!](https://karbecca.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,7 +99,7 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Gisa Chris**
+👤 **Rebecca Karungi**
 
 - GitHub: [@karbecca](https://github.com/karbecca)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/karbecca/)
