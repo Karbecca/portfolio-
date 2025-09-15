@@ -36,7 +36,7 @@ const AboutPage = () => {
         </div>
         <div className="aboutbuttonSection">
           <a
-            href="https://drive.google.com/file/d/1ky-Ikl2mZ-YB4LQqljbg8tEOSr1N9rV6/view?usp=drive_link"
+            href="https://docs.google.com/document/d/1Uo2hFVcKeuQYoqGsYQgDrDS1g8v_JIRq5Af40SM0fVA/edit?usp=sharing"
             className="aboutButton"
             target="blank"
           >
