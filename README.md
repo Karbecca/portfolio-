@@ -72,7 +72,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-   git clone https://github.com/gisachris/Portfolio-Site.git
+   git clone https://github.com/karbecca/Portfolio-Site.git
    cd Portfolio-Site
 ```
 
@@ -101,8 +101,8 @@ To run the project, execute the following command:
 
 👤 **Gisa Chris**
 
-- GitHub: [@gisachris](https://github.com/gisachris)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/gisa-chris/)
+- GitHub: [@karbecca](https://github.com/karbecca)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/karbecca/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +120,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/gisachris/budget_builder/issues).
+Feel free to check the [issues page](https://github.com/karbecca/budget_builder/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
