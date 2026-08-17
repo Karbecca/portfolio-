@@ -6,31 +6,34 @@ import Loader from "./shared/loader";
 import "../styles/css/testimonials.css";
 import "../styles/css/helpers.css";
 
+const recommendationsLink = import.meta.env.VITE_RECOMMENDATIONS_LINK;
+
 const Testimonials = () => {
   const [loading, setLoading] = useState(false);
   const [recoms, setRecoms] = useState(null);
-  const [dataFetched, setDataFetched] = useState(false);
   const recomsHolder = useRef(null);
   const hasEffectRun = useRef(false);
-
-  const recommendationsLink = import.meta.env.VITE_RECOMMENDATIONS_LINK;
 
   const { setPopupShow } = useContext(PopupContext);
 
   useEffect(() => {
-    // Intersection observer
     const observer = new IntersectionObserver(async (entries) => {
       const [entry] = entries;
       try {
         if (entry.isIntersecting && !hasEffectRun.current) {
           hasEffectRun.current = true;
+
+          if (!recommendationsLink) return;
+
           setLoading(true);
 
-          const request = await fetch(`${recommendationsLink}`);
-          if (request.ok && dataFetched === false) {
-            const response = await request.json();
-            setRecoms(response.posts);
-            setDataFetched(true);
+          const request = await fetch(recommendationsLink);
+          if (request.ok) {
+            const contentType = request.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+              const response = await request.json();
+              setRecoms(response.posts);
+            }
           }
           setLoading(false);
         }
@@ -48,7 +51,7 @@ const Testimonials = () => {
             message: null,
             pass: false,
           });
-        }, 3000)
+        }, 3000);
       }
     }, {
       root: null,
@@ -56,7 +59,7 @@ const Testimonials = () => {
       threshold: 0.8,
     });
 
-    let recommendationsHolder = recomsHolder.current;
+    const recommendationsHolder = recomsHolder.current;
 
     if (recommendationsHolder) {
       observer.observe(recommendationsHolder);
@@ -64,8 +67,8 @@ const Testimonials = () => {
 
     return () => {
       if (recommendationsHolder) observer.unobserve(recommendationsHolder);
-    }
-  }, []);
+    };
+  }, [setPopupShow]);
 
   return (
     <section ref={recomsHolder} id="Testimonials">

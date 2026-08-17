@@ -1,24 +1,19 @@
-import { useEffect, useRef, useState, useContext } from "react";
+import { useRef, useState, useContext, useMemo } from "react";
 import projectModalContext from "../contexts/projectModalContext";
 import projects from "../data/featured.json";
-import Loader from "../components/shared/loader";
+import Loader from "./shared/loader";
 import "../styles/css/featured.css";
 import "../styles/css/helpers.css";
 
 const FeaturedApps = () => {
-  const [featuredProjects, setFeaturedProjects] = useState(null);
   const [showProjectType, setshowProjectType] = useState("all");
   const [loading, setLoading] = useState(false);
   const projectRefs = useRef([]);
   const { projectData, setProjectData } = useContext(projectModalContext);
 
-  useEffect(() => {
-    if (projects) {
-      let selectedProjects = projects.filter((project) =>
-        project.type.includes(showProjectType)
-      );
-      setFeaturedProjects(selectedProjects);
-    }
+  const featuredProjects = useMemo(() => {
+    if (!projects) return null;
+    return projects.filter((project) => project.type.includes(showProjectType));
   }, [showProjectType]);
 
   const overlayInfo = (index) => {
@@ -129,14 +124,14 @@ const FeaturedApps = () => {
                 </div>
                 {project.images.small && (
                   <img
-                    src={project.images.small}
+                    src={`${import.meta.env.BASE_URL}${project.images.small.slice(1)}`}
                     alt="background__image_project"
                     className="projectImage"
                   />
                 )}
                 {!project.images.small && project.images.large && (
                   <img
-                    src={project.images.large}
+                    src={`${import.meta.env.BASE_URL}${project.images.large.slice(1)}`}
                     alt="background__image_project"
                     className="projectImage"
                   />

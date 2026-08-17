@@ -1,3 +1,4 @@
+import pppImage from "/images/ppp.jpg";
 import "../styles/css/about.css";
 
 const AboutPage = () => {
@@ -6,7 +7,7 @@ const AboutPage = () => {
       <section className="aboutpictureSection">
         <div className="aboutPicturecontainer">
           <div className="aboutPicturecontent">
-            <img src="/images/ppp.jpg" alt="Inside Image" />
+            <img src={pppImage} alt="Inside Image" />
           </div>
         </div>
       </section>
@@ -17,7 +18,7 @@ const AboutPage = () => {
         </div>
         <div className="aboutparagraph">
           <div className="aboutpagepartext">
-            <p>I'm Rebecca Karungi, a solutions developer for the Web.</p>
+            <p>I&apos;m Rebecca Karungi, a solutions developer for the Web.</p>
 
             <p>
               I create web services and applications. Innovative design and
@@ -36,9 +37,10 @@ const AboutPage = () => {
         </div>
         <div className="aboutbuttonSection">
           <a
-            href="https://docs.google.com/document/d/1Uo2hFVcKeuQYoqGsYQgDrDS1g8v_JIRq5Af40SM0fVA/edit?usp=sharing"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             className="aboutButton"
-            target="blank"
+            target="_blank"
+            rel="noreferrer"
           >
             My Resume
           </a>

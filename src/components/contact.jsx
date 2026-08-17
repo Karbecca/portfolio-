@@ -38,7 +38,7 @@ const Contact = () => {
             <li className="s_link">
               <a
                 href="https://www.linkedin.com/in/karungi-rebecca/"
-                target="blank"
+                target="_blank"
                 rel="noreferrer"
               >
                 LinkedIn
@@ -47,7 +47,7 @@ const Contact = () => {
             <li className="s_link">
               <a
                 href="https://wa.me/250784563836"
-                target="blank"
+                target="_blank"
                 rel="noreferrer"
               >
                 WhatsApp
@@ -56,7 +56,7 @@ const Contact = () => {
             <li className="s_link">
               <a
                 href="https://twitter.com/_karbecca"
-                target="blank"
+                target="_blank"
                 rel="noreferrer"
               >
                 Twitter
@@ -65,7 +65,7 @@ const Contact = () => {
             <li className="s_link">
               <a
                 href="https://github.com/karbecca"
-                target="blank"
+                target="_blank"
                 rel="noreferrer"
               >
                 GitHub

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import MainBody from './components/mainBody';
 import Navigation from './components/navigation';
 // import Toggler from '../src/components/shared/toggler';
-import PopUpMessage from '../src/components/shared/message';
+import PopUpMessage from './components/shared/message';
 import PopupContext from './contexts/popupContext';
 import './styles/css/app.css';
 

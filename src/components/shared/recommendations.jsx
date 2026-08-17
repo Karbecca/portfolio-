@@ -84,7 +84,7 @@ const LinkedInRecommendations = () => {
                 </section>
                 <section className="extras">
                   <img src={linkedInLogo} className="linkednLogo" alt="linkednLogo" />
-                  <a href="https://www.linkedin.com/in/gisa-chris/" target="blank" rel="noreferrer" className="readmore">Read More...</a>
+                  <a href="https://www.linkedin.com/in/karungi-rebecca/" target="_blank" rel="noreferrer" className="readmore">Read More...</a>
                 </section>
               </div>
             ))}
@@ -94,7 +94,7 @@ const LinkedInRecommendations = () => {
         <div className="recommendationsNotice">
           <p className="notice">
             Recommendations cannot be accessed remotely for now. Check them out on
-            <a href="">My LinkedIn page</a>
+            <a href="https://www.linkedin.com/in/karungi-rebecca/" target="_blank" rel="noreferrer">My LinkedIn page</a>
             , or refresh the page.
           </p>
         </div>

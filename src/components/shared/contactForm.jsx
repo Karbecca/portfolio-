@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   useEffect(() => {
     setFormInput(form);
-  });
+  }, [setFormInput]);
 
   const sendEmail = (e) => {
     e.preventDefault();

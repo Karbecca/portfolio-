@@ -93,9 +93,10 @@ const Navigation = ({ isOpen, toggleNavigation }) => {
           </section>
           <section className="navHireButton">
             <a
-              href="https://docs.google.com/document/d/1Uo2hFVcKeuQYoqGsYQgDrDS1g8v_JIRq5Af40SM0fVA/edit?usp=sharing"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               className="aboutButton"
-              target="blank"
+              target="_blank"
+              rel="noreferrer"
             >
               My Resume
             </a>
