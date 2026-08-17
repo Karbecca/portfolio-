@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Checkout the live site here!](https://karbecca.onrender.com)
+[Checkout the live site here!](https://karbecca.github.io/portfolio-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
