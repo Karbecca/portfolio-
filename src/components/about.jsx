@@ -1,4 +1,4 @@
-import pppImage from "/images/ppp.jpg";
+import pppImage from "/images/profile.png";
 import "../styles/css/about.css";
 
 const AboutPage = () => {
@@ -18,20 +18,22 @@ const AboutPage = () => {
         </div>
         <div className="aboutparagraph">
           <div className="aboutpagepartext">
-            <p>I&apos;m Rebecca Karungi, a solutions developer for the Web.</p>
+            <p>I&apos;m Rebecca Karungi, a Software Engineer with a passion for building meaningful digital products.</p>
 
             <p>
-              I create web services and applications. Innovative design and
-              compelling architecture are my go-to moves with all my projects.
+              I specialise in full-stack web development, crafting responsive,
+              scalable, and user-centred applications from the ground up. My
+              work spans front-end interfaces built with React and modern
+              JavaScript to robust back-end systems powered by Ruby on Rails
+              and PostgreSQL.
             </p>
 
             <p>
-              I have been in the development space for nearly three years now
-              and have close to one year of working experience. I’m always
-              curious about learning new skills, tools, and concepts. In
-              addition to working on various solo full-stack projects, I have
-              worked with creative teams, which involves daily stand-ups and
-              communications, source control, and project management.
+              I thrive in collaborative environments, bringing strong
+              communication, clean code practices, and a problem-solving
+              mindset to every project. Whether working independently or as
+              part of a team, I am committed to delivering software that is
+              both technically sound and genuinely useful.
             </p>
           </div>
         </div>
